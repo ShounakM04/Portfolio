@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Authentication System For Genuine Goods",
+    "imageSrc": "projects/Project1.jpg",
+    "description": "A Blockchain based website for secure product authentication and verification",
+    "skills": ["React", "JavaScript", "CSS"],
+    "source": "https://github.com/ShounakM04/Fake-Product-Identification"
+  },
+  {
+    "title": "RescueBites",
+    "imageSrc": "projects/Project2.png",
+    "description": "A full-stack website for restaurants to distribute unsold food to those in need",
+    "skills": ["React", "JavaScript", "CSS"],
+    "demo": "https://rescue-bite.vercel.app/",
+    "source": "https://github.com/ShounakM04/Leftover-Food-Management"
+  },
+  {
+    "title": "Portfolio Website",
+    "imageSrc": "projects/Project3.png",
+    "description":"",
+    "demo": "https://rescue-bite.vercel.app/",
+
+    "skills": ["React", "JavaScript", "CSS"],
+    "source": "https://github.com/example/project3"
+  },
+  {
+    "title": "Vehicle Dealership",
+    "imageSrc": "projects/Project4.png",
+    "description": "",
+    "source": "https://github.com/ShounakM04/Vehicle-Dealership"
+  }
+]

@@ -1,0 +1,172 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 85px;
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--color-text);
+  z-index: 1;
+}
+
+.title {
+  font-size: 72px;
+  font-weight: 900;
+  margin-bottom: 33px;
+  font-family: var(--font-roboto);
+}
+
+.description {
+  font-size: 30px;
+  font-family: var(--font-roboto);
+  margin-bottom: 52px;
+}
+
+.contactBtn {
+  text-decoration: none;
+  /* background-color: var(--color-primary); */
+  color: var(--color-text);
+  font-size: 21px;
+  font-weight: 300;
+  padding: 20px 46px;
+  box-shadow: 0 0 4px 0 rgb(0, 0, 0);
+  transition: background-color 0.2s ease-in-out;
+  border: 3px solid #000d80;
+}
+
+.contactBtn:hover {
+  box-shadow: 0 0 10px 0 rgba(108, 92, 231, 0.5); 
+  transform: scale(1.05); 
+  border-color: #000d80; 
+}
+
+.heroImg {
+  width: 35%;
+  height: 35%; 
+  border-radius: 50%; 
+  object-fit: cover;
+  z-index: 1;
+  margin-left: 100px;
+}
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.topBlur {
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  min-width: 350px;
+  min-width: 350px;
+  top: -128px;
+  left: -10vw;
+  border-radius: 764px;
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.bottomBlur {
+  position: absolute;
+  width: 70vw;
+  height: 50vw;
+  min-width: 350px;
+  min-width: 250px;
+  top: 246px;
+  right: -25vw;
+  border-radius: 764px;
+  filter: blur(100px);
+  z-index: 0;
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .content {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .heroImg {
+    margin: 0 auto; 
+    width: 50%; 
+    height: 50%;
+  }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+@keyframes typingAndHiding {
+  0%, 100% { width: 0; opacity: 0; }
+  10%, 90% { width: 100%; opacity: 1; }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+@keyframes typingAndHiding {
+  0%, 100% { width: 0; opacity: 0; }
+  10%, 90% { width: 100%; opacity: 1; }
+}
+
+.title-container {
+  overflow: hidden; 
+  border-right: 3px solid var(--color-text); 
+  white-space: nowrap;
+  animation: typingAndHiding 6s steps(40, end) infinite, blink 0.75s step-end infinite; 
+  font-size: 90px;
+  width: 500px;
+  font-weight: 900;
+  margin-bottom: 33px;
+  font-family: var(--font-roboto);
+}
+
+@media screen and (max-width: 830px) {
+  .title-container {
+    font-size: 60px;
+    width: 300px; 
+    animation: typingAndHiding 4s steps(30, end) infinite, blink 0.5s step-end infinite;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title-container {
+    font-size: 40px;
+    width: 200px;
+    animation: typingAndHiding 3s steps(20, end) infinite, blink 0.3s step-end infinite; 
+  }
+}
+
