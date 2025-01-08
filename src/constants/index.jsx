@@ -168,7 +168,7 @@ export const education = [
   {
     id: "0",
     institution: "Pune Institute of Computer Technology",
-    degree: "Bachelor of Technology in Information Technology",
+    degree: "Bachelor of Engineering in Information Technology",
     timeline: "2022 - 2026",
   },
   {
