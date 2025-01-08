@@ -19,20 +19,22 @@ export const experience = [
     id: "1",
     icon: "/images/feature-2.png", // Update with another relevant image or icon
     title: "Nikhil Motors",
-    position:"Full Stack Intern",
+    position: "Full Stack Intern",
     text: (
       <ul className="list-disc pl-5">
-        <li>Developed dynamic and responsive UI elements for an IEEE PISB club event website.</li>
-        <li>Collaborated with a cross-functional team to build a platform utilized globally by participants.</li>
-        <li>Ensured cross-browser compatibility and responsive design for optimal user experience.</li>
-        <li>Focused on creating interactive features to engage users effectively during the event.</li>
+        <li>Developed dynamic and responsive UI components for the Nikhil Motors vehicle dealership website.</li>
+        <li>Implemented interactive features to allow customers to easily browse, filter, and inquire about vehicles.</li>
+        <li>Worked on integrating real-time inventory updates to display available vehicles and maintenance status.</li>
+        <li>Focused on creating seamless user flows for potential buyers to schedule test drives and inquire about vehicle details.</li>
+        {/* <li>Ensured high performance, fast loading times, and mobile-friendly design for a better user experience.</li> */}
       </ul>
     ),
     button: {
-      icon: "/images/docs.svg", // Can replace with another icon for a relevant action
-      title: "See Details",
+      icon: "/images/docs.svg", // Replace with a more relevant icon if needed, like a car or test drive icon
+      title: "See Vehicle Details",
     },
-  },
+  }
+  
 ];
 export const skills = [
   {
