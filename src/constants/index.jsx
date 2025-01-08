@@ -94,7 +94,7 @@ export const links = [
   },
   {
     platform: "GitHub",
-    url: "https://github.com/your-github-username",
+    url: "https://github.com/ShounakM04",
     icon: "/images/github-sign.png",
   },
   {
@@ -104,7 +104,7 @@ export const links = [
   },
   {
     platform: "Email",
-    url: "shounakmulay04@gmail.com",
+    url: "mailto:shounakmulay04@gmail.com",
     icon: "/images/gmail.png",
   },
 ];
