@@ -23,7 +23,7 @@ const Skills = () => {
                 className="flex flex-col items-center justify-center p-4 border-2 border-s3 rounded-3xl bg-s1/20"
               >
                 <img
-                  src={`/images/${skill.imageSrc}`} // Assuming images are in the /images folder
+                  src={skill.imageSrc} // Assuming images are in the /images folder
                   alt={skill.title}
                   className="w-16 h-16 object-contain mb-4"
                 />

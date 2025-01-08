@@ -37,51 +37,51 @@ export const experience = [
 export const skills = [
   {
     "title": "HTML",
-    "imageSrc": "../../public/images/html.png"
+    "imageSrc": "/images/html.png"
   },
   {
     "title": "CSS",
-    "imageSrc": "../../public/images/css.png"
+    "imageSrc": "/images/css.png"
   },
   {
     "title": "JavaScript",
-    "imageSrc": "../../public/images/javascript.png"
+    "imageSrc": "/images/javascript.png"
   },
   {
     "title": "React",
-    "imageSrc": "../../public/images/react.png"
+    "imageSrc": "/images/react.png"
   },
   {
     "title": "Node",
-    "imageSrc": "../../public/images/node.png"
+    "imageSrc": "/images/node.png"
   },
   {
     "title": "Express",
-    "imageSrc": "../../public/images/express.png"
+    "imageSrc": "/images/express.png"
   },
   {
     "title": "Tailwind",
-    "imageSrc": "../../public/images/tailwind.png"
+    "imageSrc": "/images/tailwind.png"
   },
   {
     "title": "MongoDB",
-    "imageSrc": "../../public/images/mongodb.png"
+    "imageSrc": "/images/mongodb.png"
   },
   {
     "title": "PostgreSQL",
-    "imageSrc": "../../public/images/pg.png"
+    "imageSrc": "/images/pg.png"
   },  
   {
     "title": "GIT",
-    "imageSrc": "../../public/images/git.png"
+    "imageSrc": "/images/git.png"
   },
   {
     "title": "Figma",
-    "imageSrc": "../../public/images/figma.png"
+    "imageSrc": "/images/figma.png"
   },
   {
     "title": "AWS",
-    "imageSrc": "../../public/images/aws.png"
+    "imageSrc": "/images/aws.png"
   }
 ]
 export const links = [
