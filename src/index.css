@@ -5,6 +5,11 @@
 @tailwind utilities;
 
 @layer base {
+  html, body {
+    margin: 0;  /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+    
+  }
   html {
     @apply bg-s1;
   }
@@ -15,8 +20,6 @@
     background-color: transparent; /* Ensure the background is transparent */
     overflow: auto; /* Allow scrolling */
     min-height: 100vh; /* Ensure the body takes full height */
-    padding-left: 10px; /* Add slight padding for the glow on the left */
-    padding-right: 10px; /* Add slight padding for the glow on the right */
   }
 
   /* Add animated grid background */
@@ -28,8 +31,8 @@
     width: 100%;
     height: 100%;
     background: 
-      linear-gradient(90deg, rgba(152, 148, 148, 0.17) 1px, transparent 1px),
-      linear-gradient(0deg, hsla(0, 1%, 59%, 0.17) 1px, transparent 1px);
+      linear-gradient(90deg, rgba(152, 148, 148, 0.1) 1px, transparent 1px),
+      linear-gradient(0deg, hsla(0, 1%, 59%, 0.1) 1px, transparent 1px);
     background-size: 100px 100px; /* Grid spacing */
     background-position: 0 0, 15px 15px; /* Grid offset */
     z-index: -2; /* Ensure it's behind the content */
@@ -71,6 +74,28 @@
 
   input {
     @apply tracking-[-0.03em];
+  }
+}
+@layer utilities {
+  /* Act as a border */
+  .card-wrapper {
+    @apply relative overflow-hidden rounded-2xl bg-gradient-to-b from-slate-700 to-slate-800;
+  }
+
+  /* Gradient */
+  .card-wrapper::before {
+    background: conic-gradient(
+      rgba(244, 114, 182, 0.4) 0deg,
+      rgba(192, 132, 252, 0.4) 0deg,
+      transparent 80deg
+    );
+
+    @apply absolute left-[-25%] top-[-25%] h-[150%] w-[150%] animate-border-spin content-[''];
+  }
+
+  /* Body */
+  .card-content {
+    @apply absolute left-[1px] top-[1px] h-[calc(100%-2px)] w-[calc(100%-2px)] rounded-2xl bg-gradient-to-b from-slate-800 to-slate-900;
   }
 }
 
@@ -203,10 +228,13 @@
   /* END of Gradients */
   /* START of Common */
   .container {
-    @apply mx-auto max-w-[1252px] px-16 max-xl:px-10 max-lg:px-6 max-sm:px-4;
+    @apply mx-auto max-w-[1280px] px-16 max-xl:px-10 max-lg:px-6 max-sm:px-4;
   }
   .container-aboutme {
-    @apply mx-auto max-w-[1252px] px-16 max-xl:px-10 max-lg:px-6 max-sm:px-4;
+    @apply mx-auto max-w-[1280px] px-16 max-xl:px-10 max-lg:px-6 max-sm:px-4;
+  }
+  .container-contact {
+    @apply mx-auto max-w-[1280px] px-16 max-xl:px-10 max-lg:px-6 max-sm:px-4;
   }
 
   .caption {
@@ -323,65 +351,4 @@
 
   /* END of FAQ */
   /* START of Testimonials */
-  .testimonials_head-res {
-    @apply max-2xl:mr-6 max-xl:mr-3 max-lg:mx-auto max-lg:mb-36 max-lg:max-w-330 max-lg:text-center max-md:mb-24 max-md:max-w-52;
-  }
-
-  .testimonials_inner-before {
-    @apply before:pointer-events-none before:absolute before:-top-28 before:left-[calc(50%-1px)] before:h-[calc(100%+218px)] before:w-0.5 before:bg-s2 before:content-[''] before:max-lg:top-0 before:max-lg:h-full before:max-md:hidden;
-  }
-
-  .testimonials_inner-after {
-    @apply after:pointer-events-none after:absolute after:-bottom-52 after:left-[calc(50%-1px)] after:h-24 after:w-0.5 after:bg-s5 after:content-[''] after:max-lg:-bottom-24 after:max-md:hidden;
-  }
-
-  .testimonials_group-after {
-    @apply after:pointer-events-none after:absolute after:-bottom-[212px] after:left-[calc(50%-5px)] after:z-2 after:size-2.5 after:rounded-half after:border-2 after:border-s5 after:bg-s1 after:content-[''] max-lg:after:-bottom-[102px] max-md:after:hidden;
-  }
-
-  /* END of Testimonials */
-  /*  START of Download*/
-  .download_tech-link_last-before {
-    @apply last:relative last:before:pointer-events-none last:before:absolute last:before:left-full last:before:top-[calc(50%-1px)] last:before:mr-6 last:before:h-0.5 last:before:w-[140px] last:before:bg-s5 last:before:content-[''] last:before:max-xl:w-[105px] last:before:max-lg:w-[80px] last:before:max-md:hidden;
-  }
-
-  .download_tech-link_last-after {
-    @apply last:after:pointer-events-none last:after:absolute last:after:left-[223px] last:after:top-[calc(50%-5px)] last:after:z-2 last:after:size-2.5 last:after:rounded-half last:after:border-2 last:after:border-s5 last:after:bg-s1 last:after:content-[''] last:after:max-xl:left-[187px] last:after:max-lg:left-[163px] last:after:max-md:hidden;
-  }
-
-  .download_tech-icon {
-    @apply relative z-2 flex size-full items-center justify-center transition-all duration-500;
-  }
-
-  .download_tech-icon_before {
-    @apply before:absolute before:inset-1.5 before:rounded-half before:bg-s2 before:content-[''] hover:border-s4;
-  }
-
-  .download_tech-link:hover .download_tech-icon svg path {
-    @apply fill-p1;
-  }
-
-  .download_preview-before {
-    @apply before:g8 before:absolute before:-top-0.5 before:right-6 before:h-0.5 before:w-[63.2%] before:opacity-40 before:content-[''];
-  }
-
-  .download_preview-after {
-    @apply after:g8 after:absolute after:-bottom-0.5 after:left-6 after:h-0.5 after:w-[42.2%] after:opacity-40 after:content-[''];
-  }
-
-  .download_preview-dot {
-    @apply absolute top-6 size-2.5 rounded-half;
-  }
-
-  /*  END of Download*/
-  /*  START of Footer */
-  .legal-after {
-    @apply after:absolute after:-right-5 after:top-[calc(50%-1px)] after:h-0.5 after:w-0.5 after:rounded-half after:bg-p2 after:content-[''];
-  }
-
-  .social-icon {
-    @apply flex size-10 items-center justify-center rounded-full border-2 border-s4/25 bg-s1/5 transition-all duration-500 hover:border-s4;
-  }
-
-  /*  END of Footer*/
 }

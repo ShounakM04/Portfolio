@@ -52,7 +52,7 @@ const Header = () => {
               </LinkScroll>
             </li>
             <li className="linkAnimation cursor-pointer md:-rotate-90 dark:text-white text-black relative">
-            <LinkScroll onClick={() => setIsOpen(false)} to="Contact" smooth spy offset={-155} activeClass="nav-active" className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 transform md:rotate-90 origin-center">
+            <LinkScroll onClick={() => setIsOpen(false)} to="Contact" smooth spy offset={0} activeClass="nav-active" className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 transform md:rotate-90 origin-center">
                 Contact
               </LinkScroll>
             </li>

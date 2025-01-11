@@ -1,9 +1,10 @@
 import { Element } from "react-scroll";
 import Button from "../components/Button.jsx";
 import { education, experience } from "../constants/index.jsx";
+import { Spotlight } from "../components/ui/Spotlight.jsx";
 const Features = () => {
   return (
-    <section id="About Me">
+    <section className="pl-4">
       <Element name="About Me">
         <div className="container-aboutme">
           {/* Introduction Section */}
@@ -13,13 +14,13 @@ const Features = () => {
           <h6 className="ml-4 text-2xl text-p4 mb-2 font-semibold">
             Introduction
           </h6>
-          <div className="relative mb-10 p-8 border-2 border-s3 rounded-7xl g7">
-            <p className="text-xl">
+          <div className="relative mb-10 p-8 border-2 border-s3 rounded-7xl g7" >
+            <div className="text-xl ">
               I am Shounak Mulay, an IT undergraduate passionate about
               full-stack development, cloud technologies, and creating scalable
               solutions. With a knack for problem-solving and innovation, I
               thrive on crafting impactful applications.
-            </p>
+            </div>
           </div>
 
           <div className="absolute inset-0 -z-10">

@@ -62,7 +62,7 @@ export const skills = [
     "imageSrc": "/images/express.png"
   },
   {
-    "title": "Tailwind",
+    "title": "TailwindCSS",
     "imageSrc": "/images/tailwind.png"
   },
   {
