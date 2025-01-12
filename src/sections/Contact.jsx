@@ -24,12 +24,12 @@ const Contact = () => {
     <section id="Contact" className="mt-[20%]">
       <Element name="Contact" className="relative">
         {/* Conditionally render Spotlight for larger screens */}
-        {isLargeScreen && (
+       
           <Spotlight
             className="top-100 -left-1 md:-left-54 md:-bottom-40 h-screen -z-10"
             fill="purple"
           />
-        )}
+        
 
         <BackgroundBeamsWithCollision>
           <div className="container bg-transparent mt-10">

@@ -24,12 +24,12 @@ const Projects = () => {
     <section id="Projects" className="pb-[5%] relative">
       <Element name="Projects" className="relative">
         {/* Conditionally render Spotlight for larger screens */}
-        {isLargeScreen && (
+        
           <Spotlight
             className="top-100 -left-100 md:-left-54 md:-bottom-40 h-screen -z-10"
             fill="white"
           />
-        )}
+        
 
         <div className="container relative z-2 py-28">
           <div className="caption-aboutme uppercase text-p2">PROJECTS</div>
