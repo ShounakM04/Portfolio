@@ -2,28 +2,45 @@ import { Element } from "react-scroll";
 import { links } from "../constants/index.jsx";
 import { BackgroundBeamsWithCollision } from "../components/ui/Background-Beams-With-Collision.jsx";
 import { Spotlight } from "../components/ui/Spotlight.jsx";
-// import { MovingBorder } from "../components/ui/MovingBorder.jsx";
+import { useEffect, useState } from "react";
+
 const Contact = () => {
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth >= 768); // Detect screens larger than or equal to 768px (md breakpoint)
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <section id="Contact" className="mt-[20%]">
-      
       <Element name="Contact" className="relative">
-      <Spotlight
-          className="top-100 -left-1 md:-left-54 md:-bottom-40 h-screen -z-10"
-          fill="purple"
-        />
+        {/* Conditionally render Spotlight for larger screens */}
+        {isLargeScreen && (
+          <Spotlight
+            className="top-100 -left-1 md:-left-54 md:-bottom-40 h-screen -z-10"
+            fill="purple"
+          />
+        )}
+
         <BackgroundBeamsWithCollision>
-        
           <div className="container bg-transparent mt-10">
             {/* Section Title */}
             <div className="caption-aboutme uppercase text-p2 mb-8">
               CONTACT
             </div>
-            
+
             {/* Social Media Links */}
             <div className="relative p-8 border-2 border-s3 rounded-7xl g7 mt-[5%] mb-[15%]">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                
                 {links.map(({ platform, url, icon }, idx) => (
                   <div
                     key={idx}
@@ -66,7 +83,6 @@ const Contact = () => {
               </div>
             </div>
           </div>
-
         </BackgroundBeamsWithCollision>
       </Element>
     </section>

@@ -2,19 +2,35 @@ import { Element } from "react-scroll";
 import { projects } from "../constants/index.jsx"; // Ensure you have the projects array in your constants
 import { Spotlight } from "../components/ui/Spotlight.jsx";
 import MagicButton1 from "../components/MagicButton1.jsx";
+import { useEffect, useState } from "react";
 
 const Projects = () => {
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth >= 768); // Detect screens larger than or equal to 768px (md breakpoint)
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <section id="Projects" className="pb-[5%] relative">
       <Element name="Projects" className="relative">
-        <Spotlight
-          className="top-100 -left-100 md:-left-54 md:-bottom-40 h-screen -z-10"
-          fill="white"
-        />
-        {/* <Spotlight
-      className="hidden sm:block left-80 top-28 h-[80vh] w-[50vw]"
-      fill="blue"
-    /> */}
+        {/* Conditionally render Spotlight for larger screens */}
+        {isLargeScreen && (
+          <Spotlight
+            className="top-100 -left-100 md:-left-54 md:-bottom-40 h-screen -z-10"
+            fill="white"
+          />
+        )}
+
         <div className="container relative z-2 py-28">
           <div className="caption-aboutme uppercase text-p2">PROJECTS</div>
 
