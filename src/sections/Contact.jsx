@@ -5,7 +5,7 @@ import { Spotlight } from "../components/ui/Spotlight.jsx";
 // import { MovingBorder } from "../components/ui/MovingBorder.jsx";
 const Contact = () => {
   return (
-    <section id="Contact" className="pl-4 mt-[20%]">
+    <section id="Contact" className="mt-[20%]">
       
       <Element name="Contact" className="relative">
       <Spotlight

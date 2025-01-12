@@ -6,7 +6,7 @@ import MagicButton from "../components/MagicButton.jsx";
 
 const Skills = () => {
   return (
-    <section id="Skills" className="pl-4">
+    <section id="Skills" className="">
       <Element name="Skills">
         <div className="container">
           <div className="caption-aboutme uppercase mt-[20%] text-p2">

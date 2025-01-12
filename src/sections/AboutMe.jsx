@@ -4,7 +4,7 @@ import { education, experience } from "../constants/index.jsx";
 import { Spotlight } from "../components/ui/Spotlight.jsx";
 const Features = () => {
   return (
-    <section className="pl-4">
+    <section>
       <Element name="About Me">
         <div className="container-aboutme">
           {/* Introduction Section */}
@@ -60,7 +60,7 @@ const Features = () => {
             {experience.map(({ id, position, title, text, button }) => (
               <div
                 key={id}
-                className="text-xl relative z-2 md:px-10 px-5 md:pb-10 pb-5 flex-50 max-md:g7 max-md:border-2 max-md:border-s3 max-md:rounded-3xl max-md:flex-320"
+                className="text-xl relative z-2 md:px-10 px-5 md:pb-10 pb-5 flex-50 max-md:g7 max-md:border-2 max-sm:px-8 max-md:border-s3 max-md:rounded-3xl max-md:flex-320"
               >
                 <h2 className="max-w-400 font-semibold text-p4 max-md:mb-6 max-md:h5 text-2xl leading-[36px] mt-10">
                   {position}

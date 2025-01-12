@@ -8,7 +8,7 @@ const Hero = () => {
   {/* Spotlights for Mobile (visible only on small screens) */}
   
     
-  <section className="relative w-full pt-36 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 max-md:pb-32 overflow-x-none pl-4">
+  <section className="relative w-full pt-36 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 max-md:pb-32 overflow-x-none">
     {/* Spotlights for Desktop (visible only on medium screens and larger) */}
     <Spotlight
       className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen -z-10"

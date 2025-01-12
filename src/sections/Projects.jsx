@@ -5,7 +5,7 @@ import MagicButton1 from "../components/MagicButton1.jsx";
 
 const Projects = () => {
   return (
-    <section id="Projects" className="pl-4 pb-[5%] relative">
+    <section id="Projects" className="pb-[5%] relative">
       <Element name="Projects" className="relative">
         <Spotlight
           className="top-100 -left-100 md:-left-54 md:-bottom-40 h-screen -z-10"
@@ -27,9 +27,8 @@ const Projects = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 mt-12">
             {projects.map(
               ({ id, image, title, description, techStack, link }) => (
-                <>
                 <div
-                  key={id}
+                  key={id} // Ensure the key is applied to the top-level element
                   className="card relative p-6 border-2 border-s3 rounded-7xl g7 hover:shadow-lg transition-all"
                 >
                   {/* Project Image */}
@@ -51,7 +50,7 @@ const Projects = () => {
                   <div className="flex mb-4">
                     {techStack.map((tech, idx) => (
                       <div
-                        key={idx}
+                        key={idx} // Ensure keys are unique here as well
                         className="w-10 h-10 bg-black rounded-full flex items-center justify-center border-2 border-s3"
                       >
                         <img
@@ -88,7 +87,6 @@ const Projects = () => {
                     </svg>
                   </a>
                 </div>
-                </>
               )
             )}
           </div>
