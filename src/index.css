@@ -119,6 +119,18 @@
   scrollbar-width: thin; /* Makes the scrollbar thinner */
   scrollbar-color: #007bff #333333; /* Thumb color and track color */
 }
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 3s linear infinite;
+}
 
 
 @layer utilities {

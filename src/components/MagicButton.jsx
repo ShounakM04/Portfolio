@@ -4,7 +4,7 @@ const MagicButton = ({ title, icon, position, handleClick, otherClasses }) => {
         className="relative inline-flex w-48 h-38 overflow-hidden rounded-3xl p-[1px] focus:outline-none"
         onClick={handleClick}
       >
-        <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_35%,#393BB2_50%,#E2CBFF_100%)]" />
+        <span className="absolute inset-[-1000%] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_35%,#393BB2_50%,#E2CBFF_100%)]" />
     
         <span
           className={`inline-flex h-full w-full cursor-pointer items-center justify-center rounded-3xl

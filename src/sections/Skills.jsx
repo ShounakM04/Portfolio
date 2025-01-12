@@ -6,14 +6,12 @@ import MagicButton from "../components/MagicButton.jsx";
 
 const Skills = () => {
   return (
-    <section id="Skills" className="relative">
+    <section id="Skills">
       <Element name="Skills">
-        <div className="container relative">
+        <div className="container">
           <div className="caption-aboutme uppercase mt-[20%] text-p2">
             SKILLS
           </div>
-
-          {/* Background Gradient */}
           <div className="absolute inset-0 -z-10">
             <div className="absolute top-[50%] left-[20%] w-[70%] h-[15%] bg-gradient-to-r from-p1 to-transparent opacity-[16%] blur-3xl rounded-[100%]"></div>
           </div>
@@ -25,7 +23,7 @@ const Skills = () => {
                 <MagicButton
                   title={skill.title}
                   icon={skill.imageSrc} // Assuming imageSrc holds the image for each skill
-                  otherClasses="flex flex-col items-center justify-center p-4 border-2 border-s3 rounded-3xl bg-s1/20 transition-all duration-300 ease-in-out hover:bg-s1/30"
+                  otherClasses="flex flex-col items-center justify-center p-4 border-2 border-s3 rounded-3xl bg-s1/20"
                 />
               </div>
             ))}
