@@ -32,7 +32,7 @@ const Header = () => {
   );
 
   return (
-    <header className="absolute md:fixed flex md:flex-col z-50 bg-transparent md:h-screen h-24 left-0 w-full md:w-28 overflow-hidden box-border mt-4 sm:mt-4 lg:ml-4 ml-6">
+    <header className="absolute md:fixed flex md:flex-col z-50 bg-transparent md:h-screen h-24 left-0 w-full md:w-28 overflow-hidden box-border mt-4 sm:mt-4 lg:ml-4">
       <div className="flex flex-col md:justify-between md:items-center md:h-full h-auto relative md:mt-10 sm:m-0 sm:p-0">
         <div className="flex md:flex-col flex-row justify-between items-center w-full md:w-auto md:gap-24 gap-4 p-4 md:p-0 sm:m-0 sm:p-0">
           <ul className="flex md:flex-col flex-row md:items-center md:gap-32 gap-6 md:mt-20 mt-0 w-full m-0 p-0">

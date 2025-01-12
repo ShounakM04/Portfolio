@@ -65,7 +65,7 @@ const Features = () => {
                 <h2 className="max-w-400 font-semibold text-p4 max-md:mb-6 max-md:h5 text-2xl leading-[36px] mt-10">
                   {position}
                 </h2>
-                <span className="text-sm font-semibold mb-3">{title}</span>
+                <span className="sm:text-sm md:text-lg font-semibold mb-3">{title}</span>
 
                 <p className="mb-11 max-md:mb-8 max-md:body-3 text-[80%]">
                   {text}
