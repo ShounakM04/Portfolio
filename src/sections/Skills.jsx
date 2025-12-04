@@ -17,7 +17,7 @@ const Skills = () => {
           </div>
 
           {/* Skills Grid Section */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 sm:gap-6 lg:gap-8 mt-[8%] mb-[20%] md:grid-cols-3 lg:grid-cols-6 gap-6 max-md:gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6 max-md:gap-4 mt-[8%] mb-[20%]">
             {skills.map((skill, index) => (
               <div key={index} className="flex justify-center">
                 <MagicButton

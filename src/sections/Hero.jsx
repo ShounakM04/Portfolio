@@ -40,7 +40,7 @@ const Hero = () => {
             development and creating dynamic and scalable web applications.
           </p>
           <a
-            href="https://drive.google.com/file/d/13IhJIeKPbDHne9bwtWP0tZ7aXKlY8Lr_/view?usp=drive_link"
+            href="https://drive.google.com/file/d/15Q7411pqQMHd0RGtuxcQbxEIpuiDLKIo/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >

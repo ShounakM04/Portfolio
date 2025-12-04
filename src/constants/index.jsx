@@ -1,23 +1,43 @@
 export const experience = [
   {
     id: "0",
-    icon: "/images/feature-1.png", // You can use an appropriate icon or image for the experience
-    title: "ArthaVedh Consulting pvt. ltd.   (Oct-2024 to Dec-2024)",
-    text: (<ul className="list-disc pl-5">
-    <li>Developed and optimized trading strategies using Python for stock market automation.</li>
-    <li>Automated buy/sell signals to enhance decision-making in trading platforms.</li>
-    <li>Implemented machine learning algorithms to improve stock prediction models.</li>
-    <li>Collaborated with the team to streamline the development of automated trading systems.</li>
-  </ul>),
-    position:"SDE Intern",
+    icon: "/images/feature-1.png", // Make sure to add an icon for this
+    title: "Zetrance Technology Pvt. Ltd. (Mar 2025 – Sep 2025)",
+    position: "Full-Stack Development Intern",
+    text: (
+      <ul className="list-disc pl-5">
+        <li>Built a preschool management platform using React, Node.js, and TypeScript with role-based access for 300+ users.</li>
+        <li>Developed REST APIs with Express.js and MongoDB for scalable backend functionality.</li>
+        <li>Integrated PhonePe payment gateway for secure fee payments, handling 300+ monthly transactions.</li>
+        <li>Implemented JWT-based authentication system with route protection and session management.</li>
+      </ul>
+    ),
     button: {
-      icon: "/images/magictouch.svg", // Can replace with a relevant icon for the action
+      icon: "/images/magictouch.svg",
       title: "View Project",
     },
   },
   {
     id: "1",
-    icon: "/images/feature-2.png", // Update with another relevant image or icon
+    icon: "/images/feature-2.png",
+    title: "ArthaVedh Consulting pvt. ltd. (Oct 2024 - Dec 2024)",
+    position: "SDE Intern",
+    text: (
+      <ul className="list-disc pl-5">
+        <li>Developed and optimized trading strategies using Python for stock market automation.</li>
+        <li>Automated buy/sell signals to enhance decision-making in trading platforms.</li>
+        <li>Implemented machine learning algorithms to improve stock prediction models.</li>
+        <li>Collaborated with the team to streamline the development of automated trading systems.</li>
+      </ul>
+    ),
+    button: {
+      icon: "/images/docs.svg",
+      title: "View Strategies",
+    },
+  },
+  {
+    id: "2",
+    icon: "/images/feature-3.png", // Ensure you have an icon here (e.g., feature-3.png)
     title: "Nikhil Motors",
     position: "Full Stack Intern",
     text: (
@@ -25,67 +45,74 @@ export const experience = [
         <li>Developed dynamic and responsive UI components for the Nikhil Motors vehicle dealership website.</li>
         <li>Implemented interactive features to allow customers to easily browse, filter, and inquire about vehicles.</li>
         <li>Worked on integrating real-time inventory updates to display available vehicles and maintenance status.</li>
-        <li>Focused on creating seamless user flows for potential buyers to schedule test drives and inquire about vehicle details.</li>
-        {/* <li>Ensured high performance, fast loading times, and mobile-friendly design for a better user experience.</li> */}
+        <li>Focused on creating seamless user flows for potential buyers to schedule test drives.</li>
       </ul>
     ),
     button: {
-      icon: "/images/docs.svg", // Replace with a more relevant icon if needed, like a car or test drive icon
+      icon: "/images/docs.svg",
       title: "See Vehicle Details",
     },
-  }
-  
+  },
 ];
 export const skills = [
   {
-    "title": "HTML",
-    "imageSrc": "/images/html.png"
+    title: "HTML",
+    imageSrc: "/images/html.png",
   },
   {
-    "title": "CSS",
-    "imageSrc": "/images/css.png"
+    title: "CSS",
+    imageSrc: "/images/css.png",
   },
   {
-    "title": "JavaScript",
-    "imageSrc": "/images/javascript.png"
+    title: "JavaScript",
+    imageSrc: "/images/javascript.png",
   },
   {
-    "title": "React",
-    "imageSrc": "/images/react.png"
+    title: "React",
+    imageSrc: "/images/react.png",
   },
   {
-    "title": "Node",
-    "imageSrc": "/images/node.png"
+    title: "Node",
+    imageSrc: "/images/node.png",
   },
   {
-    "title": "Express",
-    "imageSrc": "/images/express.png"
+    title: "Express",
+    imageSrc: "/images/express.png",
   },
   {
-    "title": "TailwindCSS",
-    "imageSrc": "/images/tailwind.png"
+    title: "TailwindCSS",
+    imageSrc: "/images/tailwind.png",
   },
   {
-    "title": "MongoDB",
-    "imageSrc": "/images/mongodb.png"
+    title: "MongoDB",
+    imageSrc: "/images/mongodb.png",
   },
   {
-    "title": "PostgreSQL",
-    "imageSrc": "/images/pg.png"
-  },  
-  {
-    "title": "GIT",
-    "imageSrc": "/images/git.png"
+    title: "PostgreSQL",
+    imageSrc: "/images/pg.png",
   },
   {
-    "title": "Figma",
-    "imageSrc": "/images/figma.png"
+    title: "GIT",
+    imageSrc: "/images/git.png",
   },
   {
-    "title": "AWS",
-    "imageSrc": "/images/aws.png"
-  }
-]
+    title: "Figma",
+    imageSrc: "/images/figma.png",
+  },
+  {
+    title: "AWS",
+    imageSrc: "/images/aws.png",
+  },
+  // --- NEW ITEMS ---
+  {
+    title: "Docker",
+    imageSrc: "/images/docker-icon-seeklogo.png",
+  },
+  {
+    title: "Kubernetes",
+    imageSrc: "/images/kube.png",
+  },
+];
 export const links = [
   {
     platform: "LinkedIn",
